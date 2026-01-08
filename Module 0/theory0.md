@@ -9,7 +9,7 @@ Module 0 – Course Introduction and Foundations
 Module Objectives
 -----------------
 
-This module 0 is to review basic network automation topics then followed by introduction to some advanced network automation topics.
+This module 0 is to review basic network automation topics then followed by an introduction to some advanced network automation topics.
 
 *   Review on how modern networks are engineered and operated as software systems
 *   Review on how to build and manage a professional automation development environment
