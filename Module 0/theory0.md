@@ -424,25 +424,13 @@ connection.disconnect()
 0.10 Tool Selection: Expert Perspective
 ---------------------------------------
 
-Tool
 
-Primary Use
-
-REST APIs
-
-Controllers, applications
-
-RESTCONF
-
-YANG‑based declarative config
-
-NETCONF
-
-Transactional configuration
-
-Netmiko
-
-CLI‑based imperative changes
+| Tool       | Primary Use                         |
+|------------|-------------------------------------|
+| REST APIs  | Controllers, applications           |
+| RESTCONF  | YANG-based declarative configuration |
+| NETCONF   | Transactional configuration         |
+| Netmiko   | CLI-based imperative changes        |
 
 Expert engineers choose tools intentionally.
 
