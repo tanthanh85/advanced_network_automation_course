@@ -13,13 +13,14 @@ This module 0 is to review basic network automation topics then followed by intr
 
 *   Review on how modern networks are engineered and operated as software systems
 *   Review on how to build and manage a professional automation development environment
-*   Review on how apply Git as the single source of truth for automation systems
+*   Review on how to apply Git as the single source of truth for automation systems
 *   Understand CI/CD pipelines and their role in network automation
-*   Review on how to Write and analyze Python code interacting with:
-    *   REST APIs
+*   Review on how to write and analyze Python code interacting with:
+    *   RESTful APIs
     *   RESTCONF
     *   NETCONF
-    *   CLI devices using Netmiko
+    *   CLI devices using Netmiko/Scapli...
+    *   JSON/XML/YAML data representation
 *   Introduction to an expert‑level troubleshooting and systems mindset
 *   (Optional) Describe the structure and expectations of the Cisco DevNet Expert (v1.1) 
 
