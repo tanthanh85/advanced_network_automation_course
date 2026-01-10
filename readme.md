@@ -1,4 +1,4 @@
-# Advanced Network Automation Source
+# Advanced Network Automation Course
 ## Course Introduction
 
 ---
