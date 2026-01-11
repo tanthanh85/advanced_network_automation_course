@@ -1,15 +1,15 @@
-# Advanced Network Automation  
+# Advanced Network Automation Course
 ## Course Introduction
 
 ---
 
 ## Course Overview
 
-Modern enterprise networks are no longer managed through isolated scripts or manual configuration. They are **software‑driven systems** composed of automation platforms, APIs, controllers, data sources, and observability pipelines that must operate reliably at scale. As a result, network automation has evolved from task automation into a **software engineering discipline**.
+Modern enterprise networks are no longer managed through isolated scripts or manual configuration. They are **software‑driven systems** composed of automation platforms, APIs, controllers, data sources, and observability pipelines that must operate reliably at scale. As a result, network automation has evolved from simple task automation into a **software engineering discipline**.
 
 This course is an **advanced, production‑focused network automation program** designed for engineers who already possess strong Python and automation fundamentals and are ready to move into **automation architecture, system design, and operational excellence**. Rather than focusing on individual tools in isolation, the course emphasizes **how automation systems are designed, integrated, deployed, observed, secured, and evolved in real enterprise environments**.
 
-Throughout the course, learners will build and evolve a **single automation platform**, progressively enhancing it with object‑oriented design, Infrastructure as Code workflows, enterprise network controllers, testing and validation pipelines, containerized runtime environments, observability systems, and AI‑assisted operational capabilities.
+Throughout the course, learners will build and evolve a **single automation platform**, progressively enhancing it with object‑oriented design, Infrastructure as Code (IaC) workflows, enterprise network controllers, testing and validation pipelines, containerized runtime environments, observability systems, and AI‑assisted operational capabilities.
 
 This course adopts **GitLab as the standard code repository and CI/CD platform** and **HashiCorp Vault as the centralized secrets management system**, reflecting real‑world enterprise automation practices.
 
@@ -23,7 +23,6 @@ This course is intended for experienced practitioners, including:
 
 - Senior network engineers transitioning into automation and NetDevOps roles  
 - Network automation engineers and software developers  
-- Site Reliability Engineers (SREs) working with networked systems  
 - Network architects responsible for large‑scale, automated environments  
 - Engineers designing or operating enterprise automation platforms  
 
@@ -35,18 +34,18 @@ The course assumes professional experience with networking and automation and is
 
 Learners are expected to have completed prior training or possess equivalent experience in the following areas:
 
-- Basics Python programming for network automation  
+- Basic Python programming for network automation  
 - Managing Python development environments  
 - Concurrency using threading and asyncio  
 - CLI automation using Netmiko and Paramiko  
-- API‑based automation using RESTful, RESTCONF/YANG and NETCONF/YANG  
+- API‑based automation using RESTful APIs, RESTCONF/YANG, and NETCONF/YANG  
 - Infrastructure as Code concepts and workflows  
-- Basic knowledge on Ansible for configuration management  
-- Automation of network security policies
-- Building Python‑based network management/monitoring tools  
+- Basic knowledge of Ansible for configuration management  
+- Automation of network security policies  
+- Building Python‑based network management and monitoring tools  
 - Evaluating and selecting appropriate automation tools  
 
-This course **does not** cover Python basics, introductory automation concepts, or networking fundamentals.
+This course **does not** cover Python fundamentals, introductory automation concepts, or networking basics.
 
 ---
 
@@ -67,10 +66,10 @@ This course **does not** cover Python basics, introductory automation concepts, 
 
 ### Module 2 – Source of Truth & Infrastructure as Code Systems
 
-- Desired vs observed state  
-- NetBox as Source of Truth  
+- Desired state vs observed state  
+- NetBox as a Source of Truth  
 - Declarative and imperative automation patterns  
-- Advanced use of Ansible and Terraform  
+- Advanced use of Ansible, Terraform, and Cisco NSO  
 - Secure secrets retrieval from Vault in IaC workflows  
 
 **Lab:** Build an IaC control system with drift detection and Vault‑backed secrets
@@ -79,7 +78,7 @@ This course **does not** cover Python basics, introductory automation concepts, 
 
 ### Module 3 – Controller‑Driven Network Automation
 
-- DNAC, ACI, and SD‑WAN architectures  
+- Cisco DNAC, ACI, and SD‑WAN architectures  
 - Automation boundaries and controller APIs  
 - Avoiding double sources of truth  
 - Secure API authentication using Vault‑managed credentials  
@@ -103,7 +102,7 @@ This course **does not** cover Python basics, introductory automation concepts, 
 
 - Containerizing automation platforms  
 - Docker and Kubernetes deployment models  
-- Secure secrets injection using Vault  
+- Secure secrets injection using HashiCorp Vault  
 - Scaling, resilience, and runtime troubleshooting  
 
 **Lab:** Deploy and scale the automation platform with Vault‑backed secrets
@@ -115,7 +114,7 @@ This course **does not** cover Python basics, introductory automation concepts, 
 - Logs, metrics, traces, and OpenTelemetry  
 - Network path visibility with ThousandEyes  
 - Event correlation and analytics with Splunk  
-- Observability for both automation and network behavior  
+- Observability for both automation platforms and network behavior  
 
 **Lab:** Build an observable automation system and correlate network and automation data
 
@@ -164,7 +163,7 @@ By the end of this course, learners will be able to:
 - **Source Control & CI/CD:** GitLab  
 - **Secrets Management:** HashiCorp Vault  
 - **Infrastructure Modeling:** NetBox  
-- **Automation & Orchestration:** Python, Ansible, Terraform  
+- **Automation & Orchestration:** Python, Ansible, Terraform, Cisco NSO  
 - **Runtime Platforms:** Docker, Kubernetes  
 - **Observability:** ThousandEyes, Splunk, OpenTelemetry  
 
