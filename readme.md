@@ -21,11 +21,11 @@ This course is **not certification‑driven**. It is intended for engineers who 
 
 This course is intended for experienced practitioners, including:
 
-- Senior network engineers transitioning into automation and NetDevOps roles
-- Network automation engineers and software developers
-- Site Reliability Engineers (SREs) working with networked systems
-- Network architects responsible for large‑scale, automated environments
-- Engineers designing or operating enterprise automation platforms
+- Senior network engineers transitioning into automation and NetDevOps roles  
+- Network automation engineers and software developers  
+- Site Reliability Engineers (SREs) working with networked systems  
+- Network architects responsible for large‑scale, automated environments  
+- Engineers designing or operating enterprise automation platforms  
 
 The course assumes professional experience with networking and automation and is not suitable for beginners.
 
@@ -35,17 +35,17 @@ The course assumes professional experience with networking and automation and is
 
 Learners are expected to have completed prior training or possess equivalent experience in the following areas:
 
-- Python programming for network automation
-- Managing Python development environments
-- Concurrency using threading and asyncio
-- CLI automation using Netmiko and Paramiko
-- API‑based automation using REST and NETCONF/YANG
-- Infrastructure as Code concepts and workflows
-- Ansible for device provisioning and configuration management
-- Automation of network security policies (ACLs, firewalls)
-- Building Python‑based network management tools
-- Centralized configuration management, monitoring, and alerting
-- Evaluating and selecting appropriate automation tools
+- Python programming for network automation  
+- Managing Python development environments  
+- Concurrency using threading and asyncio  
+- CLI automation using Netmiko and Paramiko  
+- API‑based automation using REST and NETCONF/YANG  
+- Infrastructure as Code concepts and workflows  
+- Ansible for device provisioning and configuration management  
+- Automation of network security policies (ACLs, firewalls)  
+- Building Python‑based network management tools  
+- Centralized configuration management, monitoring, and alerting  
+- Evaluating and selecting appropriate automation tools  
 
 This course **does not** cover Python basics, introductory automation concepts, or networking fundamentals.
 
@@ -53,101 +53,93 @@ This course **does not** cover Python basics, introductory automation concepts, 
 
 ## Course Content Outline
 
-### Phase 1 – Automation Architecture & Object‑Oriented Design  
-**Module 1: Software Architecture for Network Automation**
+### Module 1 – Software Architecture for Network Automation
 
-- Automation as a software system
-- Object‑oriented domain modeling for networks
-- Protocol abstraction and multi‑vendor design
-- Reliability, performance, and observability by design
-- GitLab as the automation control plane
+- Automation as a software system  
+- Object‑oriented domain modeling for networks  
+- Protocol abstraction and multi‑vendor design  
+- Reliability, performance, and observability by design  
+- GitLab as the automation control plane  
 - Secure credential handling using HashiCorp Vault  
 
 **Lab:** Build an object‑oriented automation core with secure credential access
 
 ---
 
-### Phase 2 – Intent, State & Infrastructure as Code  
-**Module 2: Source of Truth & IaC Systems**
+### Module 2 – Source of Truth & Infrastructure as Code Systems
 
-- Desired vs observed state
-- NetBox as Source of Truth
-- Declarative and imperative automation patterns
-- Advanced use of Ansible and Terraform
+- Desired vs observed state  
+- NetBox as Source of Truth  
+- Declarative and imperative automation patterns  
+- Advanced use of Ansible and Terraform  
 - Secure secrets retrieval from Vault in IaC workflows  
 
 **Lab:** Build an IaC control system with drift detection and Vault‑backed secrets
 
 ---
 
-### Phase 3 – Network Controllers & Domain Automation  
-**Module 3: Controller‑Driven Automation**
+### Module 3 – Controller‑Driven Network Automation
 
-- DNAC, ACI, and SD‑WAN architectures
-- Automation boundaries and controller APIs
-- Avoiding double sources of truth
+- DNAC, ACI, and SD‑WAN architectures  
+- Automation boundaries and controller APIs  
+- Avoiding double sources of truth  
 - Secure API authentication using Vault‑managed credentials  
 
 **Lab:** Automate workflows using enterprise controllers with Vault‑integrated authentication
 
 ---
 
-### Phase 4 – Testing, Validation & Assurance  
-**Module 4: Network Testing & Validation**
+### Module 4 – Network Testing, Validation & Assurance
 
-- Automation testing strategies
-- Python unit testing for automation systems
-- pyATS for pre‑ and post‑change validation
+- Automation testing strategies  
+- Python unit testing for automation systems  
+- pyATS for pre‑ and post‑change validation  
 - Testing automation behavior in CI pipelines  
 
 **Lab:** Build a validation pipeline integrated with GitLab CI/CD
 
 ---
 
-### Phase 5 – Runtime Platforms & Scale  
-**Module 5: Containers & Kubernetes for Automation**
+### Module 5 – Containers & Kubernetes for Network Automation
 
-- Containerizing automation platforms
-- Docker and Kubernetes deployment models
-- Secure secrets injection using Vault
+- Containerizing automation platforms  
+- Docker and Kubernetes deployment models  
+- Secure secrets injection using Vault  
 - Scaling, resilience, and runtime troubleshooting  
 
 **Lab:** Deploy and scale the automation platform with Vault‑backed secrets
 
 ---
 
-### Phase 6 – Observability, Analytics & Assurance  
-**Module 6: Observability with ThousandEyes & Splunk**
+### Module 6 – Observability, Analytics & Assurance
 
-- Logs, metrics, traces, and OpenTelemetry
-- Network path visibility with ThousandEyes
-- Event correlation and analytics with Splunk
+- Logs, metrics, traces, and OpenTelemetry  
+- Network path visibility with ThousandEyes  
+- Event correlation and analytics with Splunk  
 - Observability for both automation and network behavior  
 
 **Lab:** Build an observable automation system and correlate network and automation data
 
 ---
 
-### Phase 7 – AI in Network Automation  
-**Module 7: AI‑Assisted Network Automation**
+### Module 7 – AI‑Assisted Network Automation
 
-- Practical use cases for AI in network operations
-- LLM‑assisted diagnostics and decision support
-- Edge AI and closed‑loop automation
+- Practical use cases for AI in network operations  
+- LLM‑assisted diagnostics and decision support  
+- Edge AI and closed‑loop automation  
 - Security and governance considerations for AI‑driven systems  
 
 **Lab:** Implement AI‑assisted operational workflows with guardrails
 
 ---
 
-### Capstone Project  
-**Production‑Grade Network Automation Platform**
+### Capstone Project – Production‑Grade Network Automation Platform
 
-- Integrate all course components
-- Operate, observe, scale, and secure the automation system
-- Use GitLab CI/CD as the deployment backbone
-- Manage secrets centrally with HashiCorp Vault
-- Demonstrate architectural and operational maturity
+- Integrate all course components  
+- Operate, observe, scale, and secure the automation system  
+- Use GitLab CI/CD as the deployment backbone  
+- Manage secrets centrally with HashiCorp Vault  
+- Demonstrate architectural and operational maturity  
 
 ---
 
@@ -155,16 +147,16 @@ This course **does not** cover Python basics, introductory automation concepts, 
 
 By the end of this course, learners will be able to:
 
-- Design network automation systems using object‑oriented software architecture
-- Manage network intent and state safely using Source of Truth and IaC principles
-- Securely manage credentials and secrets using HashiCorp Vault
-- Integrate automation workflows with GitLab CI/CD pipelines
-- Automate and operate enterprise network controllers and platforms
-- Implement robust testing, validation, and assurance pipelines
-- Deploy and scale automation platforms using containers and Kubernetes
-- Build observability pipelines to diagnose and correlate automation and network issues
-- Apply AI techniques responsibly to assist network operations and decision‑making
-- Operate, troubleshoot, and evolve production‑grade network automation systems
+- Design network automation systems using object‑oriented software architecture  
+- Manage network intent and state safely using Source of Truth and IaC principles  
+- Securely manage credentials and secrets using HashiCorp Vault  
+- Integrate automation workflows with GitLab CI/CD pipelines  
+- Automate and operate enterprise network controllers and platforms  
+- Implement robust testing, validation, and assurance pipelines  
+- Deploy and scale automation platforms using containers and Kubernetes  
+- Build observability pipelines to diagnose and correlate automation and network issues  
+- Apply AI techniques responsibly to assist network operations and decision‑making  
+- Operate, troubleshoot, and evolve production‑grade network automation systems  
 
 ---
 
