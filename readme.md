@@ -35,16 +35,15 @@ The course assumes professional experience with networking and automation and is
 
 Learners are expected to have completed prior training or possess equivalent experience in the following areas:
 
-- Python programming for network automation  
+- Basics Python programming for network automation  
 - Managing Python development environments  
 - Concurrency using threading and asyncio  
 - CLI automation using Netmiko and Paramiko  
-- API‑based automation using REST and NETCONF/YANG  
+- API‑based automation using RESTful, RESTCONF/YANG and NETCONF/YANG  
 - Infrastructure as Code concepts and workflows  
-- Ansible for device provisioning and configuration management  
-- Automation of network security policies (ACLs, firewalls)  
-- Building Python‑based network management tools  
-- Centralized configuration management, monitoring, and alerting  
+- Basic knowledge on Ansible for configuration management  
+- Automation of network security policies
+- Building Python‑based network management/monitoring tools  
 - Evaluating and selecting appropriate automation tools  
 
 This course **does not** cover Python basics, introductory automation concepts, or networking fundamentals.
