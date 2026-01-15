@@ -47,8 +47,8 @@ By the end of this lab, learners will be able to:
 
 * * *
 
-4\. Team Roles (Mandatory)
---------------------------
+4\. Team Roles
+--------------
 
 Each learner must assume one role only.
 
@@ -96,8 +96,6 @@ Each learner must assume one role only.
 5\. Lab Architecture
 --------------------
 
-Copy Code
-
     lab1-iosxe-acl/
     ├── intent/
     │   └── acl.yaml
@@ -116,7 +114,7 @@ Copy Code
 6\. Environment Setup
 ---------------------
 
-### Cisco IOS XE (DevNet Sandbox)
+### Cisco IOS XE router
 
 Use the Cisco IOS XE on Cisco Developer Sandbox.  
 
