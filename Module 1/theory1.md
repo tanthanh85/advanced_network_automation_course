@@ -15,8 +15,6 @@ Learners entering this module already know how to automate networks using Python
 
 This module introduces object‑oriented software architecture as the foundation that makes this possible. These concepts are not optional design preferences; they are the mechanisms that allow teams to collaborate safely, predictably, and at scale.
 
-All later modules—Infrastructure as Code, NetBox, NSO, controllers, testing, observability, and AI—build directly on the architectural decisions established here.
-
 * * *
 
 1\. Automation as a Software System
