@@ -125,13 +125,7 @@ Common domain models include:
 
 These models are typically owned by an automation architect to ensure consistency across teams.
 
-* * *
-
-### 2.3 Devices as Objects Instead of Dictionaries
-
-A frequent problem in automation codebases is the uncontrolled use of dictionaries passed between functions. Each function expects slightly different keys, and changes ripple unpredictably through the system.
-
-Modeling devices as objects immediately improves clarity:
+Example: Modeling devices as objects immediately improves clarity:
 
 ```python
 
