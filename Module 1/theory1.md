@@ -125,7 +125,7 @@ Common domain models include:
 
 These models are typically owned by an automation architect to ensure consistency across teams.
 
-Example: Modeling devices as objects immediately improves clarity:
+Example: Modeling devices as objects immediately improves clarity
 
 ```python
 
