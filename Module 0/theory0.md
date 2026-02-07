@@ -9,7 +9,7 @@ Module 0 – Course Introduction and Foundations
 Module Objectives
 -----------------
 
-This module 0 is to review basic network automation topics then followed by an introduction to some advanced network automation topics.
+This module 0 is to review basic network automation topics then followed by an introduction to some advanced topics.
 
 *   Review on how modern networks are engineered and operated as software systems
 *   Review on how to build and manage a professional automation development environment
@@ -22,7 +22,6 @@ This module 0 is to review basic network automation topics then followed by an i
     *   CLI devices using Netmiko/Scapli...
     *   JSON/XML/YAML data representation
 *   Introduction to an expert‑level troubleshooting and systems mindset
-*   (Optional) Describe the structure and expectations of the Cisco DevNet Expert (v1.1) 
 
 * * *
 
@@ -67,53 +66,10 @@ Failure to treat automation as a system leads to fragile solutions that break un
 
 * * *
 
-0.2 DevNet Expert Practical Exam Context
-----------------------------------------
-
-### 0.2.1 Exam Philosophy
-
-The DevNet Expert Practical Exam is:
-
-*   Fully hands‑on
-*   Scenario‑based
-*   Time‑constrained
-*   Integration‑focused
-
-You are evaluated on your ability to:
-
-*   Understand requirements quickly
-*   Modify existing systems
-*   Debug failures
-*   Make sound design decisions
-
-The exam assumes prior knowledge and does not provide tutorials.
-
-* * *
-
-### 0.2.2 Example Exam Scenario
-
-You are given:
-
-*   A Git repository with automation code
-*   A failing CI/CD pipeline
-*   A brief requirement:  
-    _“Fix the pipeline and ensure the service deploys successfully.”_
-
-You must:
-
-1.  Inspect the code
-2.  Understand the failure
-3.  Apply a minimal fix
-4.  Validate end‑to‑end behavior
-
-This course is structured to mirror that experience.
-
-* * *
-
-0.3 Engineering the Development Environment
+0.2 Engineering the Development Environment
 -------------------------------------------
 
-### 0.3.1 Python as the Automation Language
+### 0.2.1 Python as the Automation Language
 
 Python is used because it offers:
 
@@ -125,7 +81,7 @@ However, Python requires discipline to avoid dependency and environment issues.
 
 * * *
 
-### 0.3.2 Virtual Environments
+### 0.2.2 Virtual Environments
 
 Always isolate project dependencies.
 ```bash
@@ -140,7 +96,7 @@ This ensures:
 
 * * *
 
-### 0.3.3 Dependency Management
+### 0.2.3 Dependency Management
 
 Use pinned dependencies.
 ```text
@@ -154,12 +110,12 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-0.4 Git as the Single Source of Truth
+0.3 Git as the Single Source of Truth
 -------------------------------------
 
-### 0.4.1 Git Beyond Version Control
+### 0.3.1 Git Beyond Version Control
 
-At expert level, Git is:
+Git is:
 
 *   A system of record
 *   A deployment trigger
@@ -169,7 +125,7 @@ If a change is not in Git, it should not exist in production.
 
 * * *
 
-### 0.4.2 Repository Structure Example
+### 0.3.2 Repository Structure Example
 ```text
 automation-project/
 ├── api/
@@ -185,7 +141,7 @@ automation-project/
 ├── requirements.txt
 └── Dockerfile
 ```
-### 0.4.3 Safe Rollback with Git
+### 0.3.3 Safe Rollback with Git
 ```bash
 git log --oneline
 git revert <commit-hash>
@@ -194,10 +150,10 @@ This creates a new commit that undoes a change without rewriting history.
 
 * * *
 
-0.5 CI/CD Pipelines for Automation
+0.4 CI/CD Pipelines for Automation
 ----------------------------------
 
-### 0.5.1 Why CI/CD Matters
+### 0.4.1 Why CI/CD Matters
 
 CI/CD ensures that:
 
@@ -209,7 +165,7 @@ Automation without CI/CD is fragile.
 
 * * *
 
-### 0.5.2 Typical Pipeline Stages
+### 0.4.2 Typical Pipeline Stages
 
 1.  Validate (linting, syntax checks)
 2.  Test (unit tests, API tests)
@@ -219,7 +175,7 @@ Automation without CI/CD is fragile.
 
 * * *
 
-### 0.5.3 Example Pipeline (Conceptual)
+### 0.4.3 Example Pipeline (Conceptual)
 ```yaml
 stages:
   - validate
@@ -240,10 +196,10 @@ deploy:
 ```
 * * *
 
-0.6 Python REST API Fundamentals
+0.5 Python REST API Fundamentals
 --------------------------------
 
-### 0.6.1 Generic REST API Example
+### 0.5.1 Generic REST API Example
 ```python
 import requests
 
@@ -266,10 +222,10 @@ Key concepts:
 
 * * *
 
-0.7 RESTCONF with Python
+0.6 RESTCONF with Python
 ------------------------
 
-### 0.7.1 RESTCONF Basics
+### 0.6.1 RESTCONF Basics
 
 RESTCONF provides RESTful access to YANG‑modeled data.
 
@@ -282,7 +238,7 @@ Headers:
 Accept: application/yang-data+json
 Content-Type: application/yang-data+json
 ```
-### 0.7.2 RESTCONF GET Example
+### 0.6.2 RESTCONF GET Example
 ```python
 from requests.auth import HTTPBasicAuth
 import requests
@@ -299,7 +255,7 @@ response = requests.get(
 
 print(response.json())
 ```
-### 0.7.3 RESTCONF PUT Example
+### 0.6.3 RESTCONF PUT Example
 ```python
 payload = {
   "ietf-interfaces:interface": {
@@ -329,7 +285,7 @@ RESTCONF enforces:
 
 * * *
 
-0.8 NETCONF with Python
+0.7 NETCONF with Python
 -----------------------
 
 ### 0.8.1 NETCONF Overview
@@ -346,7 +302,7 @@ Python library:
 
 * * *
 
-### 0.8.2 NETCONF Connection Example
+### 0.7.2 NETCONF Connection Example
 ```python
 from ncclient import manager
 
@@ -359,7 +315,7 @@ with manager.connect(
 ) as m:
     print(m.server_capabilities)
 ```
-### 0.8.3 NETCONF edit‑config Example
+### 0.7.3 NETCONF edit‑config Example
 ```python
 config = """
 <config>
@@ -383,10 +339,10 @@ with manager.connect(
     response = m.edit_config(target="running", config=config)
     print(response)
 ```
-0.9 Netmiko for CLI Automation
+0.8 Netmiko for CLI Automation
 ------------------------------
 
-### 0.9.1 When to Use Netmiko
+### 0.8.1 When to Use Netmiko
 
 Netmiko is useful for:
 
@@ -396,7 +352,7 @@ Netmiko is useful for:
 
 * * *
 
-### 0.9.2 Netmiko Example
+### 0.8.2 Netmiko Example
 ```python
 from netmiko import ConnectHandler
 
@@ -421,7 +377,7 @@ connection.send_config_set(commands)
 connection.save_config()
 connection.disconnect()
 ```
-0.10 Tool Selection: Expert Perspective
+0.9 Tool Selection:
 ---------------------------------------
 
 
@@ -436,10 +392,10 @@ Expert engineers choose tools intentionally.
 
 * * *
 
-0.11 Troubleshooting Discipline
+0.10 Troubleshooting Discipline
 -------------------------------
 
-### 0.11.1 Systematic Debugging
+### 0.10.1 Systematic Debugging
 
 1.  Identify failure
 2.  Read logs
@@ -459,7 +415,7 @@ Fix:
 
 * * *
 
-0.12 Summary
+0.11 Summary
 ------------
 
 Module 0 established the foundational knowledge and professional practices required for expert‑level network automation. It framed networks as software systems, emphasized Git‑driven workflows and CI/CD pipelines, and introduced Python‑based interaction with REST APIs, RESTCONF, NETCONF, and CLI devices. These foundations are essential for all subsequent modules and for success in the Cisco DevNet Expert Practical Exam.
@@ -479,4 +435,4 @@ Review Questions
 
 ### Next Module
 
-Module 1 – Software Design, Development, and Deployment
+Module 1 – Software Architecture for Network Automation
