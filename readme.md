@@ -19,7 +19,7 @@ Throughout the course, learners will collaboratively design and evolve a single 
 *   Observability pipelines for telemetry, logs, and events
 *   AIOps capabilities, including anomaly detection, correlation, and AI‑assisted troubleshooting and decision support
 
-Automation is treated as a team sport. The course also emphasizes collaboration between architects, developers, operators, security owners, and approvers, reflecting how automation actually functions inside large enterprises.
+The course also emphasizes collaboration between architects, developers, operators, security owners, and approvers, reflecting how automation actually functions inside large enterprises.
 
 To mirror real‑world practice, the course standardizes on:
 
