@@ -5,15 +5,28 @@
 
 ## Course Overview
 
-Modern enterprise networks are often managed through isolated scripts or manual configuration. They should be **software‑driven systems** composed of automation platforms, APIs, controllers, data sources, and observability pipelines that must operate reliably at scale. Hence, network automation has evolved from simple task automation into a **software engineering discipline**.
+Modern enterprise networks are still too often operated through isolated scripts, manual configuration, or tool‑centric workflows. At scale, these approaches fail. Today’s networks must be treated as software‑driven systems—composed of automation platforms, APIs, controllers, data sources, CI/CD pipelines, security controls, and observability layers that operate continuously and reliably. As a result, network automation has evolved from task execution into a full software engineering and operations discipline, increasingly augmented by AI‑driven insights.
 
-This course is an **advanced, production‑focused network automation program** designed for engineers/teams who already possess strong Python and automation fundamentals and are ready to move into **automation architecture, system design, and operational excellence**. Rather than focusing on individual tools in isolation, the course emphasizes **how automation systems are designed, integrated, deployed, observed, secured, and evolved in real enterprise environments**.
+This course is an advanced, production‑focused network automation program designed for engineers and teams who already have strong Python and automation fundamentals and are ready to move into automation architecture, system design, and operational excellence. Rather than teaching tools in isolation, the course focuses on how real enterprise automation systems are designed, integrated, tested, secured, deployed, observed, and evolved over time.
 
-Throughout the course, learners will build and evolve a **single automation platform**, progressively enhancing it with object‑oriented software design, Infrastructure as Code (IaC) workflows, enterprise network controllers, testing and validation pipelines, containerized runtime environments, together with observability systems, and AI‑assisted operational capabilities.
+Throughout the course, learners will collaboratively design and evolve a single end‑to‑end automation platform. This platform is progressively enhanced using:
 
-This course adopts **GitLab as the standard code repository and CI/CD platform** and **HashiCorp Vault as the centralized secrets management system**, reflecting real‑world enterprise automation practices.
+*   Object‑oriented software architecture and domain modeling
+*   Intent‑based automation and Infrastructure as Code (IaC) workflows
+*   Enterprise network controllers and their APIs
+*   CI/CD‑driven testing, validation, and safe deployment
+*   Containerized and reproducible runtime environments
+*   Observability pipelines for telemetry, logs, and events
+*   AIOps capabilities, including anomaly detection, correlation, and AI‑assisted troubleshooting and decision support
 
-This course is **not certification‑driven**. It is intended for engineers/teams who want to **think and operate like network automation architects**.
+Automation is treated as a team sport. The course also emphasizes collaboration between architects, developers, operators, security owners, and approvers, reflecting how automation actually functions inside large enterprises.
+
+To mirror real‑world practice, the course standardizes on:
+
+*   GitLab as the system of record and CI/CD control plane
+*   HashiCorp Vault for centralized, secure secrets management
+
+This course is not certification‑driven. It is designed for engineers and teams who want to think, design, and operate like network automation and AIOps architects, building systems that are scalable, observable, secure, and ready for AI‑assisted operations in production environments.
 
 ---
 
